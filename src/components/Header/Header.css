@@ -1,0 +1,141 @@
+.header{
+    width: 10%;
+    height:100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: black;
+    z-index: 999;
+}
+.logo_header{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff;
+    margin: 0 0 25%;
+}
+.logo_header>img{
+    width: 60%;
+    height: auto;
+    margin: 12%;
+}
+.logo_header>h2{
+    font-size:0.8vw;
+    padding: 0 0 8%;
+}
+.logo_header>p{
+    font-size:0.8vw;
+    padding: 0 0 8%;
+}
+.close{
+    display: none;
+}
+.open{
+    display: none;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 0 25%;
+}
+
+.menu>a{
+    width: 100%;
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.5vw;
+    padding:15%;
+    border: 1px rgb(61, 61, 61) solid;
+}
+.menu>a:hover{
+    color:#00FFFF;
+    font-size: 1.6vw;
+}
+
+.networks>li>a>img{
+    align-items: center;
+    width: 14%;
+    margin: 0 5%;
+}
+
+@media(max-width: 768px){
+    .header{
+        width: 100%;
+        position: fixed;
+        background-color:#100F0F;
+        top:-400vw;
+        transition: all 1s ease-in-out;
+    }
+
+
+    .open{
+        display: inline-block;
+        position: fixed;
+        right:20px;
+        top:20px;
+    }
+    .open>img{
+        width: 40px;
+    }
+    .close{
+        display: block;
+        position:fixed;
+        right:20px;
+        top:20px;
+    }
+    .close>img{
+        width: 40px;
+    }
+    .active_button{
+        display: none;
+    }
+    .active_menu{
+        top:0;
+        transition: all 1.2s ease-in-out;
+    }
+    
+
+    .logo_header{
+        height:160px;
+        margin:0 0 90px;
+    }
+    .logo_header>img{
+        width: 80px;
+        margin: 1%;
+    }
+    .logo_header>h2{
+        font-size:1rem;
+        padding:0 0 1%;
+    }
+    .logo_header>p{
+        font-size: 0.8rem;
+        padding:0 0 1%;
+    }
+    .menu{
+        margin: 0 0 auto;
+
+    }
+    .menu>a{
+        font-size: 1.8rem;
+        padding:10px;
+    }
+    .menu>a:hover{
+        color:#00FFFF;
+        font-size: 8vw;
+    }
+    
+    .networks>li{
+        display: flex;
+        justify-content: center;
+    }
+    .networks>li>a>img{
+        width: 100%;
+        align-items: center;
+        padding: 0 10px;
+    }
+}

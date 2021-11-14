@@ -1,0 +1,127 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.home{
+    width: 80%;
+    display:flex;
+    padding: 4rem 0 0 0;
+    flex-direction:column;
+    z-index: 2;
+}
+.top{
+    margin: 1.5rem 2rem 0.1rem;
+    color: #00FFFF;
+    font-style: italic;
+    font-size: .7rem;
+    z-index: 2;
+}
+.top2{
+    margin: 0.2rem 2rem;
+    color: #00FFFF;
+    font-style: italic;
+    font-size: .7rem;
+    z-index: 2;
+}
+.home>h1{
+    font-size: 1.5rem;
+    margin:1rem 2.8rem ;
+    color:#fff;
+    z-index: 2;
+}
+.home>h1>span:hover{
+    color: #00FFFF;
+    animation: rubberBand  1s;
+    z-index: 2;
+} 
+.home>.FB{
+    margin: 0 2.8rem ;
+    font-size:1.5rem;
+    color: #fff;
+    font-style: normal;
+    font-weight: 200;
+    z-index: 2;
+}
+.foto{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.foto>img {
+        width: 57%;
+        height: 100%;
+}
+#fotos{
+    display: none;
+}
+.btn{
+    width: 45%;
+    height: auto;
+    font-size:1.1rem;
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #ffffff;
+    margin: 2rem 2.8rem  0;
+    z-index: 2;
+}
+.btn:hover{
+    color: #000;
+    background-color: #00FFFF;
+    transition: all 1s;
+    border-color: #000;
+    z-index: 2;
+}
+.home>h1>span{
+    display: inline-block;
+    animation: bounce; 
+    animation-duration: 1s; 
+    z-index: 2;
+}
+@media (min-width: 640px) { 
+    #fotosR{
+        display:none;
+    }
+    #fotos{
+        width: 35%;
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 5vw;
+        right: 10vw;
+    }
+    .top{
+        padding: 0.5rem 0;
+    }
+    .btn{
+        width: 25%;
+    }
+    
+}
+@media (min-width: 769px) { 
+    #fotos{
+        top: 2vw;
+        width: 25%;
+    }
+    .top{
+        font-size:2vw
+    }
+    .top2{
+        font-size:2vw;
+    }
+    .home{
+        padding: 2rem 5rem;
+    }
+    .home>h1{
+        font-size:4vw;
+    }
+    .home>.FB{
+        font-size:2.1vw;
+    }
+    .btn{
+        width: 30%;
+        font-size: 2vw;
+    }
+}
+

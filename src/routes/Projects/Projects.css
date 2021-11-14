@@ -1,0 +1,76 @@
+
+.top_p{
+    padding: 3rem 2rem 0.1rem;
+    color: #00FFFF;
+    font-style: italic;
+    font-size: 1rem;
+} 
+
+.top2_p{
+    padding: 1rem 2rem;
+    color: #00FFFF;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.projects>h2{
+    font-weight:400;
+    font-style: normal;
+    font-size: 9vw;
+    margin:1rem 2.8rem 0 ;
+    color:#FFFF;
+}
+
+.projects>h2:hover{
+    color:#00FFFF;
+    display: inline-block;
+    animation: bounce; 
+    animation-duration: 1s; 
+    z-index: 2;
+} 
+.projects> .description{
+    width: 80%;
+    font-weight:300;    
+    font-style: normal;
+    color: #fff;
+    margin:1rem 2.8rem ;
+    font-size: 1.2rem;
+} 
+.Cards-p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5vw;
+    /* transform: translateX(12%); */
+    
+}
+.cards{
+    width:100%;
+}
+@media (min-width: 640px) { 
+    .projects>h2{
+        font-size: 6vw;
+    }
+    .Cards-p{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    }
+}
+@media (min-width: 768px) {
+   .projects{
+    padding: 2rem 9rem;
+   }
+   .projects>h2{
+    font-size: 5vw;
+}
+   .projects> .description{
+    font-size:2.5vw;
+}
+.Cards-p{
+    width:113%;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+    
+}

@@ -1,0 +1,175 @@
+
+.top_c{
+    margin: 1.5rem 2rem 0.1rem;
+    color: #00FFFF;
+    font-style: italic;
+    font-size: 0.9rem;
+    z-index: 2;
+}
+.top2_c{
+    margin: 0.2rem 2rem;
+    color: #00FFFF;
+    font-style: italic;
+    font-size: 0.9rem;
+    z-index: 2;
+}
+.contact>h2{
+    font-weight:400;
+    font-style: normal;
+    font-size: 8vw;
+    margin:1rem 2.8rem ;
+    color:#FFFF;
+    
+}
+.contact>h2:hover{
+    color:#00FFFF;
+    animation: bounce; 
+    animation-duration: 1s; 
+    z-index: 2;
+} 
+.form{
+    width: 70%;
+    margin:1rem 3.2rem ;
+    display:flex;
+    flex-direction: column;
+}
+.formNC{
+    width: 100%;
+}
+.formNC>input{
+    background-color:#2E2B2B;
+    width: 100%;
+    border: none;
+    margin:2% 0;
+    padding: 3%;
+}
+
+.form>input{
+    background-color: #2E2B2B;
+    padding: 3%;
+    margin:2% 0;
+    border: none;
+}
+.form>textarea{
+    background-color: #2E2B2B;
+    border: none;
+    margin:2% 0;
+    padding: 3%;
+}
+.form>.btn2{
+    width: 50%;
+    height:auto;
+    font-size:3vw;
+    color: #31C0C0;
+    background-color: transparent;
+    border-color: #31C0C0;
+    margin: 2rem 0;
+    
+}
+.form>.btn2:hover{
+    color: #000;
+    background-color: #69dbdb;
+    transition: all 1s;
+    border-color: #000;
+}
+.Segment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.gradient{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.gradient_icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gradient_icons_section{
+    color: #fff;
+    text-align: center;
+    margin: 5% 0;
+
+}
+.gradient_icons_section>p{
+    font-weight: normal;
+    margin: 2%0;   
+    padding: 2% 0;
+}
+.gradient>img{
+    height:75%;
+    width:75%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    animation: animate 10s linear infinite;
+}
+
+@media (min-width: 640px) { 
+    .contact>h2{
+        font-size: 6vw;
+    }
+    .form>input{
+        padding:2%;
+        margin: 1% 3px;
+    }
+    .formNC{
+        display: flex;
+    }
+    .formNC>input{
+        padding: 2%;
+        margin: 1% 3px;
+    }
+    .form>textarea{
+        margin: 1% 3px;
+    }
+    .form>.btn2{
+        width: 35%;
+        font-size: 2.5vw;
+    }
+}
+@media (min-width: 768px) { 
+    .contact{
+        margin-left: 9rem;
+    }
+    .contact>h2{
+        font-size: 5vw;
+        /* margin:1rem 11rem; */
+    }
+    .form{
+        width: 80%;
+    }
+    .form>.btn2{
+        width: 45%;
+        font-size: 2vw;
+    }
+    .Segment{
+        flex-direction: row;
+        align-items: stretch;
+
+    }
+    .gradient{
+        top:0;
+        /* margin:  0; */
+        height:50vh;
+    }
+    .gradient_icons_section{
+        margin: 2% 0;
+    }
+}
+
+@keyframes animate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter:hue-rotate(360deg);
+    }
+} 

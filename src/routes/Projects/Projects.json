@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name":"Web Tributo",
+        "link":"https://ye564.github.io/Pagina-Tributo/",
+        "photo":"https://i.ibb.co/c8rLXyG/tributo.png"
+    },
+    {
+        "id": 2,
+        "name":"Musical Landing Page",
+        "link":"https://ye564.github.io/Landing-Page-Music/",
+        "photo":"https://i.ibb.co/gMF5QSD/Music.png"
+    },
+    {
+        "id": 3,
+        "name":"Retos HTML, CSS y Javascript",
+        "link":"https://ye564.github.io/Landing-retos/",
+        "photo":"https://i.ibb.co/jRDFVq7/Retos.png"
+    },
+    {
+        "id": 4,
+        "name":"Alto del Maíz",
+        "photo":"https://i.ibb.co/T19pbxB/Alto.png",
+        "link":"https://ye564.github.io/Alto-del-maiz"
+    },
+    {
+        "id": 5,
+        "name":"Sistema de inventario - Supermercado ",
+        "photo":"https://i.ibb.co/BwntdxV/Sistema-de-inventario-Supermercado.png",
+        "link":"https://mercatodo-app.herokuapp.com/"
+    },
+    {
+        "id": 6,
+        "name":"Chat empresarial",
+        "photo":"https://i.ibb.co/ZzkLtwh/chat-empresarial.jpg",
+        "link":"https://chat-empresarial-intopcol.vercel.app/auth"
+    }
+]

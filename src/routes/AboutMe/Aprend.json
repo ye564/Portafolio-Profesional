@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name":"React",
+        "nivel":60,
+        "class":"skills__bar skills_bar--60"
+    },
+    {
+        "id":2,
+        "name":"HTML5",
+        "nivel":80,
+        "class":"skills__bar skills_bar--80"
+    },
+    {
+        "id":3,
+        "name":"CSS3",
+        "nivel":70,
+        "class":"skills__bar skills_bar--70"
+    },
+    {
+        "id":4,
+        "name":"JavaScript",
+        "nivel":50,
+        "class":"skills__bar skills_bar--50"
+    },
+    {
+        "id":5,
+        "name":"Angular",
+        "nivel":20,
+        "class":"skills__bar skills_bar--20"
+    },
+    {
+        "id":6,
+        "name":"Python",
+        "nivel":30,
+        "class":"skills__bar skills_bar--30"
+    }
+]

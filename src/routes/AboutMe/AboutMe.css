@@ -1,0 +1,155 @@
+
+:root{
+    --leng-anima:0%;
+}
+.about{
+    width: 80%;
+    height:100vh;
+    padding: 4rem 0 0 0;
+    display:flex;
+    flex-direction:column;
+}
+.top_a{
+    margin:0.1rem 0.1rem;
+    color: #00FFFF;
+    font-style: italic;
+    font-size: 1rem;
+}
+.top2_a{
+    margin: 0 0.5rem;
+    color: #00FFFF;
+    font-style: italic;
+    font-size: 1rem;
+}
+.about>h2{
+    font-weight:400;
+    font-style: normal;
+    font-size: 7vw;
+    margin:1rem;
+    color:#FFFF;
+}
+.about>h2:hover{
+    color:#00FFFF;
+    display: inline-block;
+    animation: bounce; 
+    animation-duration: 1s; 
+    z-index: 2;
+ 
+} 
+.description2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description2>p{
+    width: 90%;
+    font-style: normal;
+    font-size: 4.7vw;
+    color: #fff;
+    margin:1rem;
+}
+.container_nivel{
+    width: 100%;
+    height: auto;
+    bottom: 20px;
+}
+.skills{
+    display: flex;
+    width: 100%;
+    /* padding: 0 0 25px; */
+    justify-content: space-between;
+}
+.skills__bar,
+.skills__bar::after{
+    width: 100%;
+    margin: 0 0 10%;
+    height: 8px;
+    background-color:#888;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+.skills__bar::after{
+    width: 100%;
+    content: "";
+    position: absolute;
+    background-color:#00FFFF;
+    transition: 0.1s, background-color 0.2s ease-in-out;
+    left:-100%;
+    animation:skills 4s ease-in-out forwards;
+}
+.icons{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+.skills>p{
+    font-size: 3vw;
+    color:#fff;
+}
+.skills_bar--60::after{
+    --leng-anima:60%;
+}
+.skills_bar--80::after{
+    --leng-anima:80%;
+}
+.skills_bar--70::after{
+    --leng-anima:70%;
+}
+.skills_bar--50::after{
+    --leng-anima:50%;
+}
+.skills_bar--20::after{
+    --leng-anima:20%;
+}
+.skills_bar--30::after{
+    --leng-anima:30%;
+}
+@media (min-width: 640px) { 
+    .description2{
+    flex-direction: row;
+
+    }
+    .description2>p{
+    font-size:3vw;
+    }
+   .container_nivel{
+    margin-left: 5%;
+
+   }
+
+}
+@media (min-width: 768px) { 
+    .top_a{
+        margin:0.1rem 4rem;
+    }
+    .top2_a{
+        margin:0.1rem 4rem;
+    }
+    .about>h2{
+        font-size: 5vw;
+        margin:1rem 6rem;
+
+    }
+    .description2{
+        margin:1rem 4rem;
+    }
+    .description2>p{
+        font-size: 2.5vw;
+    }
+    .container_nivel{
+        margin-left: 62%;
+    
+    }
+    .skills>p{
+        font-size: 1.9vw;
+    }
+}
+
+@keyframes skills {
+    to{
+        transform: translateX(var(--leng-anima));
+    }
+}
