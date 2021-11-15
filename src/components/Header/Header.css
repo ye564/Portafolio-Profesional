@@ -13,8 +13,11 @@
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    background-color:#fff;
+    background-color:#000;
     margin: 0 0 25%;
+}
+.logo_header:hover{
+    background-color:#00cccc ;
 }
 .logo_header>img{
     width: 60%;
@@ -24,10 +27,12 @@
 .logo_header>h2{
     font-size:0.8vw;
     padding: 0 0 8%;
+    color: #fff;
 }
 .logo_header>p{
     font-size:0.8vw;
     padding: 0 0 8%;
+    color: #fff;
 }
 .close{
     display: none;

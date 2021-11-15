@@ -39,7 +39,6 @@
 .description2{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .description2>p{
     width: 90%;
@@ -53,59 +52,39 @@
     height: auto;
     bottom: 20px;
 }
-.skills{
-    display: flex;
-    width: 100%;
-    /* padding: 0 0 25px; */
-    justify-content: space-between;
-}
-.skills__bar,
-.skills__bar::after{
-    width: 100%;
-    margin: 0 0 10%;
-    height: 8px;
-    background-color:#888;
-    border-radius: 2px;
-    position: relative;
-    overflow: hidden;
-}
-.skills__bar::after{
-    width: 100%;
-    content: "";
-    position: absolute;
-    background-color:#00FFFF;
-    transition: 0.1s, background-color 0.2s ease-in-out;
-    left:-100%;
-    animation:skills 4s ease-in-out forwards;
-}
+
 .icons{
     width: 70%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    }
-.skills>p{
-    font-size: 3vw;
-    color:#fff;
+    align-items: center;    
 }
-.skills_bar--60::after{
-    --leng-anima:60%;
+.icons>h2{
+    color: #fff;
+    animation: jackInTheBox; 
+    animation-duration: 1s; 
+    
 }
-.skills_bar--80::after{
-    --leng-anima:80%;
+.kills{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
 }
-.skills_bar--70::after{
-    --leng-anima:70%;
+.kills>ul>li{
+    color: #fff;
+    padding: 10%;
 }
-.skills_bar--50::after{
-    --leng-anima:50%;
+.kills>ul>li>p{
+    color: #fff;
 }
-.skills_bar--20::after{
-    --leng-anima:20%;
+.kills>ul>li:hover{
+    color: #00FFFF;
+    animation: rubberBand;
+    animation-duration: 1s;
 }
-.skills_bar--30::after{
-    --leng-anima:30%;
+.kills>ul>li>p:hover{
+    color: #00FFFF;
 }
 @media (min-width: 640px) { 
     .description2{
@@ -143,13 +122,9 @@
         margin-left: 62%;
     
     }
-    .skills>p{
-        font-size: 1.9vw;
+    .kills>ul>li>p{
+        font-size: 1.1rem;
     }
+
 }
 
-@keyframes skills {
-    to{
-        transform: translateX(var(--leng-anima));
-    }
-}
